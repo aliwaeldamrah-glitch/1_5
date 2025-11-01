@@ -1,0 +1,95 @@
+//Assignment 1
+
+
+
+//int[] num = { 23, 45, 67, 89, 12, 34, 56, 78, 90 };
+//int sum = 0;
+//for (int i = 0; i < num.Length; i++)
+//{
+//sum += num[i];
+//}
+
+//double average = (double)sum / num.Length;
+//Console.WriteLine($"The average is: {average}");
+
+//for (int i = 0; i < num.Length; i++)
+
+//if (num[i] > average)
+//{
+//Console.WriteLine($"{num[i]}  above average");
+//}
+//else if (num[i] < average)
+//{
+//Console.WriteLine($"{num[i]}  below average");
+//}
+//else
+//{
+//Console.WriteLine($"{num[i]}  equal to the average");
+//}
+
+//for (int i = 0; i < num.Length; i++)
+
+//    if (num[i] > average)
+//    {
+//        Console.WriteLine(num[i]);
+
+//    }
+
+
+
+//                    Assignment 2
+
+
+
+
+
+
+
+
+
+//        Console.WriteLine("Enter the numbers:");
+//int num1= int.Parse(Console.ReadLine());
+//int[] numbares = new int[num1];
+//for (int i = 0; i < num1; i++)
+//{
+//    Console.Write($"Enter the numbers {i + 1}: ");
+//    numbares[i] = int.Parse(Console.ReadLine());
+//}
+
+//Console.WriteLine("Reverse order of the numbers :");
+//for (int i= numbares.Length - 1; i >= 0; i--)
+//{
+//    Console.WriteLine(numbares[i]);
+//}
+
+
+
+
+
+
+//             Assignment 3
+
+Console.Write("Enter text");
+string text = Console.ReadLine();
+
+
+char firstCharacterinatext = '\0';
+for (int i = 0; i < text.Length; i++)
+{
+    char current = text[i];
+    if (text.IndexOf(current) == text.LastIndexOf(current))
+    {
+        firstCharacterinatext = current;
+        break; 
+    }
+}
+
+
+if (firstCharacterinatext != '\0')
+{
+    Console.WriteLine($"The first non-repeating character is: {firstCharacterinatext}");
+}
+else
+{
+    Console.WriteLine("No non-repeating character found in the text.");
+}
